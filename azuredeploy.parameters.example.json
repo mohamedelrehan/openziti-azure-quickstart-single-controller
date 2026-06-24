@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "deploymentPrefix": {
+      "value": "openziti-quickstart"
+    },
+    "adminUsername": {
+      "value": "melrehan"
+    },
+    "adminPassword": {
+      "value": "ReplaceWithStrongLinuxPassword123!"
+    },
+    "vmSizeController": {
+      "value": "Standard_B1s"
+    },
+    "vmSizeRouter": {
+      "value": "Standard_B1s"
+    },
+    "dnsLabelPrefix": {
+      "value": "replaceuniquelabel"
+    },
+    "adminSourceAddressPrefix": {
+      "value": "*"
+    },
+    "openZitiAdminUser": {
+      "value": "admin"
+    },
+    "openZitiAdminPassword": {
+      "value": "ReplaceWithStrongZitiPassword123!"
+    },
+    "letsEncryptEmail": {
+      "value": "admin@example.com"
+    },
+    "installNginxLetsEncrypt": {
+      "value": "true"
+    },
+    "runAptUpgrade": {
+      "value": "true"
+    },
+    "repoRawBaseUrl": {
+      "value": "https://raw.githubusercontent.com/mohamedelrehan/openziti-azure-quickstart-single-controller/main"
+    },
+    "vnetName": {
+      "value": "openziti-quickstart-vnet"
+    },
+    "vnetAddressPrefix": {
+      "value": "10.94.0.0/16"
+    },
+    "infraSubnetName": {
+      "value": "snet-openziti-control"
+    },
+    "infraSubnetPrefix": {
+      "value": "10.94.1.0/24"
+    },
+    "routerSubnetName": {
+      "value": "snet-openziti-routers"
+    },
+    "routerSubnetPrefix": {
+      "value": "10.94.2.0/24"
+    },
+    "controllerZone": {
+      "value": "1"
+    },
+    "router01Zone": {
+      "value": "2"
+    },
+    "router02Zone": {
+      "value": "3"
+    },
+    "routerRole": {
+      "value": "edge-fabric"
+    },
+    "router01Name": {
+      "value": "edge-router-01"
+    },
+    "router02Name": {
+      "value": "edge-router-02"
+    }
+  }
+}
